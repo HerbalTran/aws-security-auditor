@@ -35,9 +35,11 @@ This script utilizes boto3.client('ec2') for high-performance API calls. It pars
 
 Developed for robust Cloud FinOps and NetDevOps automation.
 
+```mermaid
 graph LR
     A[AWS Environment] -->|boto3.client| B[Python Audit Script]
     B --> C{Detect Vulnerability?}
     C -->|Yes| D[Log to CSV]
     C -->|Yes| E[Terminal Alert]
     D --> F[Security Report]
+```
